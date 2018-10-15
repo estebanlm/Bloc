@@ -1,5 +1,9 @@
 "
 The geometry is used to define the geometry to be drawn and the interaction area.
+
+- A geometry is the clipping of an element.
+- It encapsulates paths.
+- I also ""encapsulates"" event handling (events happens in the region clipped, not outside).
 "
 Class {
 	#name : #BlGeometry,
@@ -10,7 +14,7 @@ Class {
 		'extent',
 		'pathCache'
 	],
-	#category : 'Bloc-Basic'
+	#category : #'Bloc-Basic'
 }
 
 { #category : #converting }
